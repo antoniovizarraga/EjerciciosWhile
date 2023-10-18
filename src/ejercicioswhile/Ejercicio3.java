@@ -49,7 +49,7 @@ public class Ejercicio3 {
 		 * no es positivo y por lo tanto, no quiere seguir sumando.
 		 * Así que mostramos la media final. */
 		num = num / count;
-		System.out.println("\n" + "La media es: " + num);
+		System.out.println("" + "La media es: " + num);
 		
 		// Cerramos el Scanner.
 		sc.close();
