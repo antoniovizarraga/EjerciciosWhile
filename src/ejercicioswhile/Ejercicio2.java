@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class Ejercicio2 {
 
+	/* Vamos a crear un script que pida números positivos al
+	 * usuario para poder contarlos. La gracia está en que
+	 * puede poner todos los números que quiera hasta que
+	 * el usuario introduzca un valor negativo. Ahí será
+	 * cuando el programa interpreta que el usuario no
+	 * quiere contar más valores y ahí mostraremos la
+	 * cuenta de todos los valores introducidos antes
+	 * de cerrar el programa. */
 	public static void main(String[] args) {
 		/* Creamos e inicializamos el valor que le pediremos al usuario
 		 * y el valor en el que haremos la cuenta de los números
