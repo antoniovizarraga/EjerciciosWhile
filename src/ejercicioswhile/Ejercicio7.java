@@ -35,6 +35,13 @@ public class Ejercicio7 {
 			
 			// Compruebas si el valor introducido es menor o mayor que el del PC.
 			if(userVal < RANDOM_NUM) {
+				
+				// Comprueba si el usuario escribe un valor negativo.
+				if(userVal < 0) {
+					// De ser así, imprime cuál fue el valor y detén el bucle while.
+					System.out.println("Te rendiste... El valor era: " + RANDOM_NUM);
+					break;
+				}
 				// Dile al usuario que el valor es mayor y vuelve a pedirle el valor.
 				System.out.println("Fallaste. El valor es mayor.");
 				userVal = sc.nextInt();
@@ -45,9 +52,9 @@ public class Ejercicio7 {
 			}
 		}
 		
-		/* Imprime esto en pantalla si ha acertado el número. Ya
-		 * que si sale del bucle, significa que ha acertado. */
-		System.out.println("¡Acertaste! El valor es: " + RANDOM_NUM);
+		/* Comprueba si el valor del usuario es igual que el del valor generado
+		 * aleatoriamente. De ser así, felicita al usuario por adivinarlo.*/
+		if(userVal == RANDOM_NUM)System.out.println("¡Acertaste! El valor es: " + RANDOM_NUM);
 		
 		// Cerramos el Scanner.
 		sc.close();
