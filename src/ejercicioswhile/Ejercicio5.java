@@ -39,15 +39,11 @@ public class Ejercicio5 {
 				neg_num += user;
 			}
 			
-			
+			neg_num = neg_num / count;
 			
 			/* Y compruebas si un valor es impar o par
 			 * para luego decírselo al usuario... */
-			if(num % 2 == 0) {
-				System.out.println("El valor " + num + " es par.");
-			} else {
-				System.out.println("El valor " + num + " es impar.");
-			}
+			
 		
 			
 			// y le vuelves a pedir el valor (Si es que quiere poner otro).
